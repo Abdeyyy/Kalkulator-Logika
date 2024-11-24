@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Logika Matematika</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kalkulator">
+        <input type="text" id="display" readonly>
+        <div class="button">
+            <button class="btn" onclick="appendValue('T')">T</button>
+            <button class="btn" onclick="appendValue('F')">F</button>
+            <button class="btn operator" onclick="appendValue('∨')">∨</button>
+            <button class="btn operator" onclick="appendValue('∧')">∧</button>
+            <button class="btn operator" onclick="appendValue('→')">→</button>
+            <button class="btn operator" onclick="appendValue('↔')">↔</button>
+            <button class="btn operator" onclick="appendValue('¬')">¬</button>
+            <button class="btn operator" onclick="appendValue('⊕')">⊕</button>
+            <button class="btn submit" onclick="calculate()">Hasil</button>
+            <button class="btn clear" onclick="clearDisplay()">Reset</button>
+        </div>
+    </div>
+    <div class="truth-table-container">
+        <div id="truthTable"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
