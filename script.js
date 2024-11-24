@@ -42,11 +42,11 @@ function calculate() {
         }
 
         evalExpr = evalExpr
-            .replace(/A/g, "&&")  
-            .replace(/V/g, "||")  
-            .replace(/~/g, "!")   
-            .replace(/<->/g, "===") 
-            .replace(/->/g, "<="); 
+            .replace(/∧/g, "&&")  
+            .replace(/∨/g, "||")  
+            .replace(/¬/g, "!")   
+            .replace(/↔/g, "===") 
+            .replace(/→/g, "<="); 
 
         let result;
         try {
