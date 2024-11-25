@@ -3,123 +3,103 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('gunung.jpg') no-repeat center center;
+    background: url("https://i.imgur.com/7DGVCSP.png") no-repeat center center;
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.kalkulator {
-    width: 250px;
+  }
+  
+  .kalkulator {
     background: transparent;
     backdrop-filter: blur(20px);
     border-radius: 10px;
     box-shadow: 0 0 3px rgb(0, 0, 1);
     padding: 20px;
-}
-#kalkulator Kalkulator Logika{
+  }
+  #kalkulator Kalkulator Logika {
     justify-content: center;
-}
-
-
-#display {
-    width: 230px;
-    height: 50px;
+  }
+  
+  #display {
     margin-bottom: 20px;
     font-size: 24px;
     text-align: left;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-}
-
-.button {
+    box-shadow: 0 0 3px rgb(0, 0, 1);;
+  }
+  
+  .button {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-}
-
-.btn {
-    padding: 15px;
-    margin-right: 2px;
-    margin-bottom: 5px;
-    border: none;
-    border-radius: 5px;
+  }
+  
+  .btn-lg {
     background-color: white;
-    cursor: pointer;
-}
-
-.btn:active {
+    border: black 0px solid;
+  }
+  
+  .btn:active {
     background-color: #ddd;
-}
-
-.operator {
+  }
+  
+  .boolean {
+    grid-column: span 2;
+  }
+  
+  .operator {
     background-color: rgb(255, 203, 31);
-}
-
-.operator:active {
-    background-color: rgb(248, 38, 38);
-}
-
-.submit {
+  }
+  
+  .operator:active {
+    background-color: rgb(255, 245, 132);
+  }
+  
+  .clear {
+    grid-column: span 2;
+    background-color: rgb(255, 17, 17);
+    color: white;
+    width: 100%;
+  }
+  
+  .clear:active {
+    background-color: rgb(255, 50, 50);
+  }
+  
+  .submit {
     grid-column: span 4;
     background-color: rgb(57, 229, 255);
-    color: #ddd;
+    color: #000000;
     width: 100%;
-}
-
-.submit:active {
+  }
+  
+  .submit:active {
     background-color: rgb(135, 211, 255);
-}
-
-.clear {
-    grid-column: span 4;
+  }
+  
+  .backspace {
+    grid-column: span 2;
     background-color: rgb(255, 17, 17);
-    color: #ddd;
-    width: 100%;
-}
-
-.clear:active {
+    color: white;
+  }
+  
+  .backspace:active {
     background-color: rgb(255, 50, 50);
-}
+  }
 
-
-.truth-table-container {
-    margin-top: 20px;
-    text-align: center;
-    padding: 10px;
-    width: 400px; 
-    margin-right: -50;
-    border-radius: 20px;
-}
-
-table {
-    margin: 20px auto;
-    border-collapse: collapse;
-    width: 100%;
-    font-family:
-    
-}
-
-th, td {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
-    font-size: 16px;
-}
-
-th {
-    background-color: #f2f2f25f;
-    font-weight: bold;
-}
-
-tr:nth-child(even) {
-    background-color: #f2f2f25f;
-}
-
-tr:hover {
+  .dropdown-toggle {
     background-color: transparent;
-}
+    border: 0px;
+    box-shadow: 0px;
+  }
+  
+  .dropdown-menu {
+    background-color: transparent;
+    border: 0px;
+    box-shadow: transparent;
+  }
 
-table td {
-    background-color: #f2f2f25f;
-}
+  .button > * {
+    box-shadow: 0 0 3px black;
+  }
