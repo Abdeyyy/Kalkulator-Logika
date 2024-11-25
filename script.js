@@ -55,6 +55,10 @@ function calculate() {
             result = false; 
         }
 
+        if (i === 0) {
+            finalResult = result ? "T" : "F";
+        }
+
         tableHTML += "<tr>";
         for (let j = 0; j < combinations[i].length; j++) {
             tableHTML += "<td>" + (combinations[i][j] ? "T" : "F") + "</td>";
@@ -66,8 +70,9 @@ function calculate() {
     tableHTML += "</table>";
     document.getElementById("truthTable").innerHTML = tableHTML;
 
-    display.value = expr; 
+    display.value = finalResult;
 }
+
 
 function getVariables(expr) {
     return [...new Set(expr.match(/[A-Z]/g))];  
