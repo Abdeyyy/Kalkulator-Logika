@@ -46,7 +46,7 @@ function calculate() {
             .replace(/∨/g, "||")  
             .replace(/¬/g, "!")   
             .replace(/↔/g, "===") 
-            .replace(/→/g, "<="); 
+            .replace(/→/g, "!$& ||"); 
 
         let result;
         try {
